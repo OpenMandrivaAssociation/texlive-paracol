@@ -1,3 +1,9 @@
+# revision 24426
+# category Package
+# catalog-ctan /macros/latex/contrib/paracol
+# catalog-date 2011-10-27 18:19:57 +0200
+# catalog-license lppl
+# catalog-version 1.00
 Name:		texlive-paracol
 Version:	1.00
 Release:	1
@@ -49,6 +55,7 @@ document switching and sychronizing each corresponding part in
 %doc %{_texmfdistdir}/source/latex/paracol/paracol.dtx
 %doc %{_texmfdistdir}/source/latex/paracol/paracol.ins
 %doc %{_texmfdistdir}/source/latex/paracol/ref.dtx
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -59,3 +66,5 @@ document switching and sychronizing each corresponding part in
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
