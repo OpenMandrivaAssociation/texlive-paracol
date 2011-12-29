@@ -18,9 +18,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
 The package provides yet another multi-column typesetting
@@ -28,20 +25,12 @@ mechanism by which you produce multi-column (e.g., bilingual)
 document switching and sychronizing each corresponding part in
 "parallel".
 
-%pre
-    %_texmf_mktexlsr_pre
-
 %post
-    %_texmf_mktexlsr_post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
-    fi
+    %{_sbindir}/texlive.post
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
@@ -56,7 +45,6 @@ document switching and sychronizing each corresponding part in
 %doc %{_texmfdistdir}/source/latex/paracol/paracol.dtx
 %doc %{_texmfdistdir}/source/latex/paracol/paracol.ins
 %doc %{_texmfdistdir}/source/latex/paracol/ref.dtx
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -67,5 +55,3 @@ document switching and sychronizing each corresponding part in
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
