@@ -1,12 +1,12 @@
-# revision 24426
+# revision 26474
 # category Package
 # catalog-ctan /macros/latex/contrib/paracol
-# catalog-date 2011-10-27 18:19:57 +0200
+# catalog-date 2012-05-17 13:04:31 +0200
 # catalog-license lppl
-# catalog-version 1.00
+# catalog-version 1.10
 Name:		texlive-paracol
-Version:	1.00
-Release:	2
+Version:	1.10
+Release:	1
 Summary:	Multiple columns with texts "in parallel"
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/paracol
