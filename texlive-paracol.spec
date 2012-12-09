@@ -55,3 +55,21 @@ document switching and sychronizing each corresponding part in
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.10-1
++ Revision: 812724
+- Update to latest release.
+
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.00-2
++ Revision: 754641
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.00-1
++ Revision: 719189
+- texlive-paracol
+- texlive-paracol
+- texlive-paracol
+- texlive-paracol
+
