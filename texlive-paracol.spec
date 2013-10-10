@@ -1,11 +1,11 @@
-# revision 26474
+# revision 31009
 # category Package
 # catalog-ctan /macros/latex/contrib/paracol
-# catalog-date 2012-05-17 13:04:31 +0200
+# catalog-date 2013-06-28 11:10:07 +0200
 # catalog-license lppl
-# catalog-version 1.10
+# catalog-version 1.22
 Name:		texlive-paracol
-Version:	1.10
+Version:	1.22
 Release:	1
 Summary:	Multiple columns with texts "in parallel"
 Group:		Publishing
@@ -45,6 +45,7 @@ document switching and sychronizing each corresponding part in
 %doc %{_texmfdistdir}/source/latex/paracol/paracol.dtx
 %doc %{_texmfdistdir}/source/latex/paracol/paracol.ins
 %doc %{_texmfdistdir}/source/latex/paracol/ref.dtx
+%doc %{_texmfdistdir}/source/latex/paracol/scfnote.dtx
 
 #-----------------------------------------------------------------------
 %prep
@@ -55,21 +56,3 @@ document switching and sychronizing each corresponding part in
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.10-1
-+ Revision: 812724
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.00-2
-+ Revision: 754641
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.00-1
-+ Revision: 719189
-- texlive-paracol
-- texlive-paracol
-- texlive-paracol
-- texlive-paracol
-
