@@ -6,7 +6,7 @@
 # catalog-version 1.10
 Name:		texlive-paracol
 Version:	1.10
-Release:	1
+Release:	2
 Summary:	Multiple columns with texts "in parallel"
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/paracol
