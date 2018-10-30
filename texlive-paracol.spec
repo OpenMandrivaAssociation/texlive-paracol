@@ -1,6 +1,6 @@
 Name:		texlive-paracol
 Version:	1.34
-Release:	2
+Release:	3
 Summary:	Multiple columns with texts "in parallel"
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/paracol
