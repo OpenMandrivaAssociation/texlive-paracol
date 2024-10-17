@@ -3,7 +3,7 @@ Version:	49560
 Release:	2
 Summary:	Multiple columns with texts "in parallel"
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/paracol
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/paracol
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/paracol.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/paracol.doc.r%{version}.tar.xz
