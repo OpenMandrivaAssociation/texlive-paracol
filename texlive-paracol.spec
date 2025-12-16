@@ -1,5 +1,5 @@
 Name:		texlive-paracol
-Version:	72651
+Version:	76924
 Release:	1
 Summary:	Multiple columns with texts "in parallel"
 Group:		Publishing
